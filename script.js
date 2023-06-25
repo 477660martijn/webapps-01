@@ -1,4 +1,4 @@
-let link = "https://www.youtube.com"
+/* let link = "https://www.youtube.com"
 document.getElementById("link").href = link
 
 const elem = document.createElement("p");
@@ -15,3 +15,6 @@ document.getElementById("change")
             changeText(this);
         }
     );
+
+ */
+

@@ -1,8 +1,108 @@
-*{
-    background-color: bisque;
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    background-color: #dedede;
+
 }
 
-
-header{
-    background-color: aquamarine;
+body{
+    margin: 0;
 }
+
+header {
+    display: block;
+    background-color: #6ce851;
+    color: #fff;
+    border-top: 5rem solid;
+    border-bottom: 5rem solid;
+    border-color: #dedede;
+}
+
+header .banner-header, main .inner-main{
+    box-shadow: 5px 5px 10px #999999;
+}
+
+header .inner{
+    display: flex;
+    padding-left: 1rem;
+    height: 8rem;
+    align-items: center;
+}
+
+header .logo {
+    /* original dimensions 914x500, 1.828 ratio*/
+    height: 15rem;
+    width: 27.42rem;
+}
+
+/* Style the navigation links */
+.navigation{
+    height: 100%;
+}
+
+.navigation ul{
+    display: flex;
+    height: 100%;
+    margin: auto;
+}
+
+.navigation ul li {
+    height: 100%;
+    display: flex;
+    padding-right: 1.5rem;
+}
+
+.navigation ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    padding: 0 4rem;
+}
+
+.navigation ul li>:first-child{
+    padding-left: 5rem;
+}
+.navigation ul li a:hover {
+background: rgba(137, 150, 0, 0.38);}
+
+.navigation ul li a:hover{
+    color: white;
+}
+
+main{
+    padding: 6rem 2rem 2rem;
+}
+
+main .inner-main{
+    display: flex;
+    background-color: white;
+    padding: 2rem 1rem;
+}
+main, header .inner {
+    max-width: 200rem;/* This is the inner width of the content inside of your header (80%, etc) */
+    margin: 0 auto;
+}
+
+aside{
+    padding: 2rem 4rem 2rem 4rem;
+    float: left;
+}
+
+article{
+    margin: auto;
+}
+
+.description{
+
+}
+
+.description-title{
+    margin: auto;
+    font-size: 5rem;
+    color: #6ce851;
+}
+
