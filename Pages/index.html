@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <title>CarWiki</title>
-    <script src="../script.js"></script>
+
 
 </head>
 <body>
@@ -20,6 +20,9 @@
                     <li>
                         <a href="manufacturer.html">Manufacturer</a>
                     </li>
+                    <li>
+                        <a href="mercedes.html">Mercedes</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -27,17 +30,49 @@
 </header>
 
 <main>
+
     <div class ="inner-main">
         <aside >
-            <h2>Sort and Filter System</h2>
+            <h2 class="sort-filter-title">Sort and Filter System</h2>
+            <h3 class="sort-title">
+                Sort
+            </h3>
 
+            <form class="sortForm" action="localhost:3000/names" method="post">
+                <label for="fname">First name:</label><br/>
+                <input type="text" id="fname" name="firstName"
+                       value="John"><br/>
+                <label for="lname">Last name:</label><br/>
+                <input type="text" id="lname" name="lastName"
+                       value="Doe"><br/><br/>
+
+                <input type="radio" id="male" name="gender"
+                       value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender"
+                       value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender"
+                       value="other">
+                <label for="other">Other</label>
+            </form>
+            <h3 class="filter-title">
+                Filter
+            </h3>
         </aside>
 
         <article>
             <section class="description">
                 <p class="description-title">Car Brands </p>
+                <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in neque diam. Sed ultricies lectus neque, eu tincidunt urna scelerisque sit amet. Vestibulum a nisl elementum, porttitor orci a, ullamcorper ex. Nunc rhoncus condimentum rutrum. Maecenas viverra laoreet congue. Aliquam sed hendrerit sapien, eu rhoncus libero. Suspendisse vitae metus tempor, lacinia ante vitae, porttitor nunc. Quisque et purus non eros laoreet maximus nec eget lectus.</p>
             </section>
-            <section class="car-brands">Array of car brands (Section 2)</section>
+            <section class="car-brands">
+                <div id="brand1" class="grid-item" >Car brannd 1</div>
+                <div class="grid-item">Car brannd 2</div>
+                <div class="grid-item">Car brannd 3</div>
+                <div class="grid-item">Car brannd 4</div>
+                <div class="grid-item">Car brannd 5</div>
+            </section>
         </article>
     </div>
 </main>
@@ -45,4 +80,6 @@
 
 
 </body>
+
+<script src="../script.js"></script>
 </html>

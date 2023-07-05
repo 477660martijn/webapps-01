@@ -7,6 +7,7 @@ html {
 
 body{
     margin: 0;
+    padding-bottom: 3rem;
 }
 
 header {
@@ -88,15 +89,28 @@ main, header .inner {
 }
 
 aside{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
     padding: 2rem 4rem 2rem 4rem;
     float: left;
 }
 
+
 article{
+    width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
 }
 
 .description{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    align-items: center;
+    border-bottom: 0.2rem solid #6ce851;
 
 }
 
@@ -104,5 +118,41 @@ article{
     margin: auto;
     font-size: 5rem;
     color: #6ce851;
+    padding-bottom: 3rem;
 }
+
+.description-text{
+    font-size: 1.5rem;
+}
+
+.car-brands{
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.car-brands .grid-item{
+    margin: auto;
+    padding: 10rem 1rem;
+}
+
+ #brand1{
+    display: none;
+}
+
+ .car-models{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 3rem;
+     border: 0.2rem solid #6ce851;
+ }
+
+ .car-models .grid-item{
+     padding: 10rem 1rem;
+     border-bottom: 0.2rem solid;
+ }
+
+
 
